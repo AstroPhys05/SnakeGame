@@ -1,21 +1,20 @@
 # SnakeGame
 
-A simple web SnakeGame made using JavaScript andthe p5 js framework
+A simple web SnakeGame made using JavaScript and the p5 js framework
 
+Objective: 
 
+Width: Amount of horizontal pixels 
+Height: Amount of vertical pixels
+Columns : Amount of horizontal pixels divided by scale 
+Rows : Amount of vertical pixels divided by scale 
 
-
-
-Notes: Grid: -The GameBoard
-
-Represented uning a 2D array
-Confined in a finite world
-Width: Amount of Columns Height: Amount of Rows
-
+Objects:
 Snake:
+Updates location by adding x and y velocities to the innitial velocity.
+Keyboard Events (arrow keys) changes the directions of the velocities by passing the new desired velocity of the snake.
 
-Direction controlled by keyboard input
-Represented in Grid by id
 Food:
+Sets Food object in a random location. 
 
-Sets Food id in a random location
+Both snake and food objects are floored to a scale value to give a grid like effect to the canvas.
