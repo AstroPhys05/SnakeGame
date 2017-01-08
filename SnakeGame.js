@@ -12,17 +12,17 @@ function setup(){
 // p5 draw function draws the background and the snake
 function draw() {
   background(50);
+  snake.update();
+  snake.show();
+  snake.gameover();
+  food.show();
+
   if (snake.eat(food)) {
     food = new Food();
     snake.total++;
     score.innerHTML = "Score: " + TotalScore;
     TotalScore++;
   }
-  snake.update();
-  snake.show();
-  food.show();
-
-
 }
 
 // Keyboard Controls of the snake
