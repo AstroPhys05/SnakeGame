@@ -15,6 +15,8 @@ function draw() {
   if (snake.eat(food)) {
     food = new Food();
     snake.total++;
+    score.innerHTML = "Score: " + TotalScore;
+    TotalScore++;
   }
   snake.update();
   snake.show();
