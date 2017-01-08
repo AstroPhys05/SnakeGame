@@ -22,8 +22,7 @@ function draw() {
   snake.show();
   food.show();
 
-  fill(150);
-  rect(food.x, food.y, scl, scl);
+
 }
 
 // Keyboard Controls of the snake
