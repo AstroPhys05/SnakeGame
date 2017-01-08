@@ -2,7 +2,7 @@
 
 A simple web SnakeGame made using JavaScript and the p5 js framework
 
-Objective: 
+Objective: The objective of this game is to make your snake as long as possible by eating food hence, getting a score as high as possible. You have to avoid touching any part of the snake and avoid crashing into the wall. 
 
 Width: Amount of horizontal pixels 
 Height: Amount of vertical pixels
