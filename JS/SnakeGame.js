@@ -13,7 +13,7 @@ function draw() {
   background(50);
   snake.update();
   snake.show();
-  // snake.GameOver();
+  snake.GameOver();
   food.show();
 
   if (snake.eat(food)) {
@@ -48,4 +48,6 @@ function mousePressed(){
   snake.total = 0;
   snake.tail = [];
   score.innerHTML = "Score: 0";
+  snake.x = 300;
+  snake.y = 300;
 }

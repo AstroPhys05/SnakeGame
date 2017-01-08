@@ -52,15 +52,13 @@ function Snake() {
   }
   }
 
-  this.GameOver = function(){
-    for (var i = 0; i < this.tail.length; i++) {
-          var tailpos = this.tail[i];
-          var distance = dist(this.x, this.y, tailpos.x, tailpos.y);
-          if (distance < 1) {
-            // console.log('starting over');
-            this.total = 0;
-            this.tail = [];
-          }
-        }
-    }
-}
+ this.GameOver = function() {
+   if (this.x === 0 || this.x === width || this.y === 0 || this. y === height) {
+     snake.total = 1;
+     snake.tail = [];
+     score.innerHTML = "Score: 0";
+     snake.x = 300;
+     snake.y = 300;
+   }
+ }
+ }
