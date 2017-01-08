@@ -31,7 +31,7 @@ function Snake() {
   this.xspeed = 0;
   this.yspeed = 0;
 
-  this.eat - function(pos) {
+  this.eat = function(pos) {
     var d = dist(this.x, this.y, pos.x, pos.y);
     if (d < 1) {
       return true;
