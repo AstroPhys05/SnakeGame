@@ -4,3 +4,5 @@ var scl = 30;
 var SnakeSize = 30;
 var fps = 10;
 var FoodSize = 30;
+var score = document.getElementById("Score")
+var TotalScore = 1
