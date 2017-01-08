@@ -6,15 +6,6 @@ function Snake() {
   this.xspeed = 0;
   this.yspeed = 0;
 
-  this.eat = function(pos) {
-    var d = dist(this.x, this.y, pos.x, pos.y);
-    if (d < 1) {
-      return true;
-    } else {
-      return false;
-    }
-  }
-
 // Draws the Snake using p5 on the canvas
   this.show = function() {
     fill(255);
@@ -33,5 +24,14 @@ function Snake() {
   this.direction = function(x, y) {
     this.xspeed = x;
     this.yspeed = y;
+  }
+  
+  this.eat = function(FoodPos) {
+    var distance = dist(this.x, this.y, FoodPos.x, FoodPos.y);
+    if (distance <= 1) {
+      return true;
+    } else {
+      return false;
+    }
   }
 }
