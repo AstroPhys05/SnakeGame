@@ -1,12 +1,18 @@
-
-
 // setup function by p5 framework to give us the
 //    setup of the canvas and the snake object
 function setup(){
+  createCanvas(600,600);
   snake = new Snake();
+  food = new Food();
+  frameRate(fps);
+}
+
+// p5 draw function draws the background and the snake
+function draw() {
+  background(50);
   snake.update();
   snake.show();
-
+  food.show();
 }
 
 // Keyboard Controls of the snake
