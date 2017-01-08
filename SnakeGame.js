@@ -13,6 +13,10 @@ function draw() {
   snake.update();
   snake.show();
   food.show();
+
+  if (snake.eat(food)) {
+    food = new Food();
+  }
 }
 
 // Keyboard Controls of the snake
