@@ -52,13 +52,5 @@ function Snake() {
   }
 }
 
-this.gameover = function() {
-  for (var i = 0; i < this.tail.length; i++) {
-    var pos = this.tail[i];
-    var d = dist(this.x, this.y, pos.x, pos.y);
-    if (d < 1) {
-      score.innerHTML = "GAME OVER!";
-      this.total = 0;
-      this.tail = [];
-    }
+
 }

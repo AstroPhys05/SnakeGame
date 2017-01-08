@@ -14,7 +14,7 @@ function draw() {
   background(50);
   snake.update();
   snake.show();
-  snake.gameover();
+
   food.show();
 
   if (snake.eat(food)) {
