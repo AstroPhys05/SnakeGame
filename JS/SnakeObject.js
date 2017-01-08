@@ -50,7 +50,17 @@ function Snake() {
   } else {
     return false;
   }
-}
+  }
 
-
+  this.GameOver = function(){
+    for (var i = 0; i < this.tail.length; i++) {
+          var tailpos = this.tail[i];
+          var distance = dist(this.x, this.y, tailpos.x, tailpos.y);
+          if (distance < 1) {
+            // console.log('starting over');
+            this.total = 0;
+            this.tail = [];
+          }
+        }
+    }
 }

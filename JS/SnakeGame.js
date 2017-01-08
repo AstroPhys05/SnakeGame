@@ -1,6 +1,5 @@
 // setup function by p5 framework to give us the
 //    setup of the canvas and the snake object
-
 function setup(){
   createCanvas(600,600);
   snake = new Snake();
@@ -14,6 +13,7 @@ function draw() {
   background(50);
   snake.update();
   snake.show();
+  // snake.GameOver();
   food.show();
 
   if (snake.eat(food)) {
@@ -41,3 +41,11 @@ document.onkeydown = function(e) {
             break;
     }
 };
+
+
+
+function mousePressed(){
+  snake.total = 0;
+  snake.tail = [];
+  score.innerHTML = "Score: 0";
+}
